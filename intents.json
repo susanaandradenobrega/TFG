@@ -1,0 +1,172 @@
+{
+    "intents": [
+
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "How are you",
+                "Hello"
+            ],
+            "responses": [
+                "Hello",
+                "Good to see you again",
+                "Hi there, how can I help you?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I'm a culinary chatbot specializing in recommending a variety of recipes customized to your preferences. I can also help create personalized meals that promote a balanced and healthy diet. Additionally, I can provide nutritional information and recommend recipes based on these aspects."
+            ],
+            "context": [
+                ""
+            ]
+        },
+		{
+            "tag": "recipe",
+            "patterns": [
+                "Can you suggest me a recipe?",
+				"Give me a recipe.",
+				"Recipe."
+            ],
+            "responses": [
+                "Yes, sure. I recommend you this recipe: {recipe}  Enjoy your meal."
+            ]
+        },
+		{
+            "tag": "recipe_ingredient",
+            "patterns": [
+				"Can you give me a recipe with the {ingredients}.",
+                "Can you suggest me a recipe with the {ingredients}.",
+				"I want a recipe with {ingredients}.", 
+				"Give me a recipe with {ingredients}."
+            ],
+            "responses": [
+                "Yes, sure. Here is a recipe: {recipe}",
+				"I suggest you this one: {recipe}"
+            ]
+        },
+		{
+            "tag": "recipe_calories",
+            "patterns": [
+				"Can you give me the calories of the recipe.",
+				"I want the calories of the recipe", 
+				"Give me the calories of the recipe."
+            ],
+            "responses": [
+                "Absolutely. The {recipe} has {calories} calories." 
+            ]
+        },
+		{
+            "tag": "recipe_nutrition_values",
+            "patterns": [
+				"Can you give me the nutrition values of the recipe.", 
+				"Give me the nutrition values of the recipe."
+            ],
+            "responses": [
+                "Absolutely. The {recipe} has this nutrition values: {nutritional_values}" 
+            ]
+        },
+		{
+            "tag": "aliment_nutrition_values",
+            "patterns": [
+                "Can you tell me the nutrition values of the aliment {aliment}?",
+                "Give me the nutrition values of {aliment}.",
+				"Give me the nutrition information of an {aliment}.",
+				"Nutrition information of {aliment}.",
+                "Give me the nutrition values of ingredient {aliment}"
+            ],
+            "responses": [
+                "The aliment has this nutritional values: {nutritional_values}",
+				"The nutrition values of the aliment is: {nutritional_values}"
+            ]
+		},
+		{
+            "tag": "plan_meal_day",
+            "patterns": [
+				"Can you plan my meal for today?",
+				"I want a meal plan for today."
+            ],
+            "responses": [
+                "Here is a meal plan for today: {meal_plan}.", 
+				"I suggest you this meal plan: {meal_plan}."
+            ]
+        },
+		{
+            "tag": "user_calories_left",
+            "patterns": [
+                "Calories left.",
+                "Can you tell me how many calories I still can consume today?",
+				"Calories I still can consume today?"
+            ],
+            "responses": [
+				"Sure, you still have left {calories_to_ingest} calories."
+            ]
+        },
+		{
+            "tag": "user_calories_consumed",
+            "patterns": [
+                "Can you tell me how many calories I have ingested today?",
+                "Calories ingested today.",
+				"Calories I have ingested today?"
+            ],
+            "responses": [
+                "Sure, you ingested today {calories_ingested} calories."
+            ]
+        },
+		{
+            "tag": "user_calories",
+            "patterns": [
+                "How many calories can I ingest in a day?",
+				"Calories recommended"
+            ],
+            "responses": [
+                "Sure, the recommended calories for you are {calories}"
+            ]
+        }
+    ]
+}
